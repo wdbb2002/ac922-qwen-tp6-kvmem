@@ -1,0 +1,84 @@
+{
+  "status": "FINAL_LIMITED_VALIDATION_COLD4_UNQUALIFIED_MATRIX_INCOMPLETE",
+  "scope": "Final configuration: single 256K and prewarmed four-way passed; cold four-way NUMA8 guard failed; remaining six matrix cells not measured; no experiments running.",
+  "eight_cold_matrix_complete": false,
+  "missing_cold_cells": [
+    [
+      5120,
+      1
+    ],
+    [
+      5120,
+      4
+    ],
+    [
+      30720,
+      1
+    ],
+    [
+      30720,
+      4
+    ],
+    [
+      102400,
+      1
+    ],
+    [
+      102400,
+      4
+    ],
+    [
+      261120,
+      4
+    ]
+  ],
+  "prefill_scope": "Actual computed tokens / TTFT wall span includes scheduling and first decode, not pure GPU kernel time. Engine request phase seconds overlap in concurrency and cannot be interpreted as aggregate wall seconds.",
+  "sources": [
+    {
+      "path": "verification/final_v5/cold/report.json",
+      "sha256": "ff0d8e9763bf9c0daab0b867ae1334567de214ccd47914b92d854b497a80df82",
+      "status": "FAILED_OR_INCOMPLETE_PRESERVED"
+    },
+    {
+      "path": "verification/final_v5/prime_warm/report.json",
+      "sha256": "b6ee49abd41bc1d332333d7fe41ac0560f1bc0bf12841585cf026ae6cd40b948",
+      "status": "ORIGINAL_256K_PHASE_ALL_STRICT_PASS"
+    }
+  ],
+  "cells": [
+    {
+      "input_tokens_each": 261120,
+      "concurrency": 1,
+      "cache": "prime",
+      "strict_accuracy_passed": true,
+      "zero_preemption": true,
+      "actual_compute_tokens": 261120.0,
+      "local_cache_tokens": 0.0,
+      "external_cache_tokens": 0.0,
+      "computed_prefill_tokens_per_ttft_wall_second": 1594.927180074458,
+      "engine_prefill_seconds_sum": 162.1973158600158,
+      "decode_tokens_per_second": 149.92289627163677,
+      "common_decode_seconds": 1.4807611480355263,
+      "running_max": 1.0,
+      "output_tokens": 223,
+      "source": "verification/final_v5/prime_warm/report.json"
+    },
+    {
+      "input_tokens_each": 261120,
+      "concurrency": 4,
+      "cache": "warm",
+      "strict_accuracy_passed": true,
+      "zero_preemption": true,
+      "actual_compute_tokens": 490752.0,
+      "local_cache_tokens": 0.0,
+      "external_cache_tokens": 553728.0,
+      "computed_prefill_tokens_per_ttft_wall_second": 1640.9138424532694,
+      "engine_prefill_seconds_sum": 1135.26883064094,
+      "decode_tokens_per_second": 260.7789490563249,
+      "common_decode_seconds": 3.1981109020416625,
+      "running_max": 4.0,
+      "output_tokens": 868,
+      "source": "verification/final_v5/prime_warm/report.json"
+    }
+  ]
+}

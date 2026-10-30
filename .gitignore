@@ -1,0 +1,6 @@
+发布清单.md
+*.tar
+*.tar.gz
+*.zip
+.env
+__pycache__/
