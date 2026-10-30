@@ -1,6 +1,6 @@
 {
-  "status": "FINAL_LIMITED_VALIDATION_COLD4_UNQUALIFIED_MATRIX_INCOMPLETE",
-  "scope": "Final configuration: single 256K and prewarmed four-way passed; cold four-way NUMA8 guard failed; remaining six matrix cells not measured; no experiments running.",
+  "status": "FINAL_LIMITED_VALIDATION_COLD4_TEST_INCOMPLETE_MATRIX_INCOMPLETE",
+  "scope": "Final configuration: single 256K and prewarmed four-way passed; cold four-way testing incomplete after NUMA8 memory guard stopped the run; remaining six matrix cells not measured; no experiments running.",
   "eight_cold_matrix_complete": false,
   "missing_cold_cells": [
     [
@@ -37,7 +37,7 @@
     {
       "path": "verification/final_v5/cold/report.json",
       "sha256": "ff0d8e9763bf9c0daab0b867ae1334567de214ccd47914b92d854b497a80df82",
-      "status": "FAILED_OR_INCOMPLETE_PRESERVED"
+      "status": "TEST_INCOMPLETE_PRESERVED"
     },
     {
       "path": "verification/final_v5/prime_warm/report.json",
