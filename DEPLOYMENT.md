@@ -1,4 +1,4 @@
-> 以下教程适用于完整离线交付包，命令须在该包根目录执行。本 GitHub 仓库当前仅提供文档及性能结果，尚未提供教程引用的 tools、fixtures、verification 和 image 载荷。文中的运行状态描述为交付验收当时的记录。
+> 以下教程适用于完整离线交付包，命令须在该包根目录执行。本 GitHub 仓库提供文档及性能结果；教程引用的 tools、fixtures、verification 和 image 载荷通过[完整离线交付包（中国移动云盘）](https://yun.139.com/shareweb/#/w/i/2yA8x3HBdK7z5)分发。请下载全部文件并保留目录结构，按包内校验清单核验。文中的运行状态描述为交付验收当时的记录。
 
 # 同款AC922千问27B / vLLM / KVMem有限验收精简包
 
